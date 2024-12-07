@@ -155,3 +155,4 @@ C:\Users\lolfa\OneDrive\Desktop\SystemBiblotek\BiblotekDb\obj\Debug\net8.0\refin
 C:\Users\lolfa\OneDrive\Desktop\SystemBiblotek\BiblotekDb\obj\Debug\net8.0\BiblotekDb.pdb
 C:\Users\lolfa\OneDrive\Desktop\SystemBiblotek\BiblotekDb\obj\Debug\net8.0\BiblotekDb.genruntimeconfig.cache
 C:\Users\lolfa\OneDrive\Desktop\SystemBiblotek\BiblotekDb\obj\Debug\net8.0\ref\BiblotekDb.dll
+C:\Users\lolfa\OneDrive\Desktop\SystemBiblotek\BiblotekDb\obj\Debug\net8.0\BiblotekDb.sourcelink.json

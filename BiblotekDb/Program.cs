@@ -56,20 +56,20 @@ class MainProgram
             case 1:
                 Add.Run();
                 break;
-            case 2:
-                null.Run();
-                break;
-            case 3:
-                null.Run();
-                break;
-            case 4:
-                null.Run();
-                break;
-            case 5:
-                null.run();
-                break;
+            // case 2:
+            //     null.Run();
+            //     break;
+            // case 3:
+            //     null.Run();
+            //     break;
+            // case 4:
+            //     null.Run();
+            //     break;
+            // case 5:
+            //     null.run();
+            //     break;
             case 6:
-                null.Run();
+                List.Run();
                 break;
             case 7:
                 System.Console.WriteLine("See you later space cowboy...");

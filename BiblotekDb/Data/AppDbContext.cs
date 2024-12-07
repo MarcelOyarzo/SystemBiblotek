@@ -12,11 +12,24 @@ public class AppDbContext : DbContext
         optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=BiblotekDb;Trusted_Connection=True;");
     }
 
-    // protected override void OnModelCreating(ModelBuilder modelBuilder)
-    // {
-    //     modelBuilder.Entity<Customer>()
-    //         .HasOne(P=> P.Address)
-    //         .WithMany(A => A.Customer)
-    //         .HasForeignKey(P => P.AddressId);
-    // }
+     protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Borrower>()
+            .HasKey(ba => new {ba.BookID, ba.AuthorID }); 
+
+        modelBuilder.Entity<Borrower>()
+            .HasOne(ba => ba.Book)
+            .WithMany(ba => ba.Borrowers)
+            .HasForeignKey(ba => ba.BookID);
+        
+        modelBuilder.Entity<Borrower>()
+            .HasOne(ba => ba.Author)
+            .WithMany(ba => ba.Borrowers)
+            .HasForeignKey(ba => ba.AuthorID);
+        
+        modelBuilder.Entity<Loan>()
+            .HasKey(l => l.LoanID);
+    }
+
+
 }
