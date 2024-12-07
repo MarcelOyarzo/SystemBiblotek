@@ -76,7 +76,7 @@ class MainProgram
                 menuSel = 0;   
                 return;
             default:
-                System.Console.WriteLine("Wrong input!");
+                System.Console.WriteLine("Wrong characters...");
                 Console.ReadLine();
                 break;
         }
