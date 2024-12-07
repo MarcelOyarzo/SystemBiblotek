@@ -54,7 +54,7 @@ class MainProgram
         switch (menuSel)
         {
             case 1:
-                null.Run();
+                Add.Run();
                 break;
             case 2:
                 null.Run();
