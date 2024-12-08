@@ -18,3 +18,14 @@ namespace libraryDb.Models
         public Book Book {get; set;}
     }
 }
+
+/*
+Loan
+LoanID (int, not null ) (PK)
+BookID (int, not null) (FK)
+LoanDate (Date, Not null) 
+ReturnDate (Date, not null)
+ComeBack (Boolean, deafult false) 
+LoanName (Varchar, not null)¨
+
+*/

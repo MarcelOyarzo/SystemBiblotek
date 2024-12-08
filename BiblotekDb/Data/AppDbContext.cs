@@ -15,7 +15,7 @@ public class AppDbContext : DbContext
      protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Borrower>()
-            .HasKey(ba => new {ba.BookID, ba.AuthorID }); 
+            .HasKey(ba => ba.BorrowerID); 
 
         modelBuilder.Entity<Borrower>()
             .HasOne(ba => ba.Book)
@@ -30,6 +30,4 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<Loan>()
             .HasKey(l => l.LoanID);
     }
-
-
 }

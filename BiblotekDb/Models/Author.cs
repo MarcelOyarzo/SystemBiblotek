@@ -13,3 +13,12 @@ namespace libraryDb.Models
         public ICollection<Borrower> Borrowers {get; set;}
     }
 }
+
+/*
+Auther
+AutherID (int, not null)(PK)
+Firstname (varchar, not null)
+LastName (varchar, not null)
+
+
+*/

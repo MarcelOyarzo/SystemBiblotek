@@ -16,3 +16,13 @@ namespace libraryDb.Models
         public ICollection<Loan> Loans {get; set;}
     }
 }
+
+/*
+Book
+
+BookID (int, not null)(PK)
+Title (Varchar, not null)
+IssueDate (Date, not null)
+QuickBorrow(Bolean, Deafult false)
+
+*/

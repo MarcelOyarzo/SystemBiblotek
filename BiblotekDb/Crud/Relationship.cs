@@ -15,26 +15,26 @@ public class Relationship
             {
             foreach (var book in books)
             {
-                System.Console.WriteLine($"Book ID: {book.BookID} Title: {book.Title} ");
+                System.Console.WriteLine($"Book ID {book.BookID} Title {book.Title} ");
             }
             }
             else 
             {
-                System.Console.WriteLine("There is no book! ");
+                System.Console.WriteLine("There is no book ");
             } 
 
         var Authors = context.Authors.ToList();
         
             if(Authors.Any())
             {
-            foreach (var Author in Authors)
+            foreach (var author in Authors)
             {
-                System.Console.WriteLine($"Author ID: {Author.AuthorID} Name: {Author.FirstName} {Author.LastName} ");
+                System.Console.WriteLine($"Aurthor ID {author.AuthorID} Name {author.FirstName} {author.LastName} ");
             }
             }
             else 
             {
-                System.Console.WriteLine("There is no author! ");
+                System.Console.WriteLine("There is no author ");
             } 
 
 
@@ -45,21 +45,21 @@ public class Relationship
                 System.Console.WriteLine("Invalid BookID ");
             }
 
-            System.Console.Write("Enter Author ID ");
+            System.Console.Write("Enter Aurthor ID ");
 
-            if (!int.TryParse(Console.ReadLine(), out var AuthorID))
+            if (!int.TryParse(Console.ReadLine(), out var authorID))
             {
-                System.Console.WriteLine("Invalid Author ID ");
+                System.Console.WriteLine("Invalid Aurthor ID ");
             }
 
             var bookAuthor = new Borrower
             {
-                BookID = bookID, AuthorID = AuthorID
+                BookID = bookID, AuthorID = authorID
             };
 
             context.Borrowers.Add(bookAuthor);
             context.SaveChanges();
-            System.Console.WriteLine("It been saved ");
+            System.Console.WriteLine("Has been saved ");
             
         }
     }

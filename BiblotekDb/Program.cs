@@ -10,7 +10,9 @@ class MainProgram
 {
     static void Main(string[] args)
     {   
+        Seed.Run();
         Console.WriteLine("Welcome to the library\n");
+
         int menuSel = 0;
         do
         {

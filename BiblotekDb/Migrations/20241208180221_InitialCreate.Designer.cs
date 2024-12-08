@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BiblotekDb.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241207195615_InitialCreate")]
+    [Migration("20241208180221_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

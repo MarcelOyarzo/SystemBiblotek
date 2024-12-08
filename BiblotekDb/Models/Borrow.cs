@@ -14,3 +14,11 @@ namespace libraryDb.Models
         public Book Book {get; set;}
     }
 }
+
+/*
+Borrower(BookAuthor)
+AuthorID (int, not null)(FK)
+BookID (int, not null)(FK)
+BorrowerID (int, not null)(PK)
+
+*/

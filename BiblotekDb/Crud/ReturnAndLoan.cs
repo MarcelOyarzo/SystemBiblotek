@@ -59,7 +59,7 @@ public class ReturnAndLoan
             }
 
 
-            Console.Write("Enter the name of the loaner ");
+            Console.Write("Enter the name of the borrower ");
             var loaner = Console.ReadLine();
 
             Console.Write("Enter Book ID ");
