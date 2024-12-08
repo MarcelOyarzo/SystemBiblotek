@@ -62,12 +62,12 @@ class MainProgram
             // case 3:
             //     null.Run();
             //     break;
-            // case 4:
-            //     null.Run();
-            //     break;
-            // case 5:
-            //     null.run();
-            //     break;
+            case 4:
+                Relationship.Run();
+                break;
+            case 5:
+                Remove.Run();
+                break;
             case 6:
                 List.Run();
                 break;
