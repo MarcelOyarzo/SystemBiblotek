@@ -49,7 +49,7 @@ public class Remove
             {
                 foreach (var lend in loans) 
                 {
-                    System.Console.WriteLine($"Loan ID {lend.LoanID} Loaners IssueDate {lend.ComeBack}");
+                    System.Console.WriteLine($"Loan ID: {lend.LoanID} Loaners IssueDate: {lend.ComeBack}");
                 }
             }
 
@@ -84,7 +84,7 @@ public class Remove
             {
                 foreach (var bock in books) 
                 {
-                    System.Console.WriteLine($"Book ID {bock.BookID} Title {bock.Title} ");
+                    System.Console.WriteLine($"Book ID: {bock.BookID} Title: {bock.Title} ");
                 }
             }
 
@@ -123,7 +123,7 @@ public class Remove
             {
                 foreach (var auth in Authors)
                 {
-                    System.Console.WriteLine($"Author ID {auth.AuthorID} Firstname {auth.FirstName} Lastname {auth.LastName} ");
+                    System.Console.WriteLine($"Author ID: {auth.AuthorID} Firstname: {auth.FirstName} Lastname: {auth.LastName} ");
                 }
             }
 

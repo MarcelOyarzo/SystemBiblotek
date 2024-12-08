@@ -21,7 +21,7 @@ public class ViewBook
                     System.Console.WriteLine($"Book Title {book.Title} ");
                     foreach (var author in book.Borrowers)
                     {
-                        System.Console.WriteLine($"Aurthor ID {author.AuthorID} Aurthor Name {author.Author.FirstName} {author.Author.LastName}");
+                        System.Console.WriteLine($"Aurthor ID: {author.AuthorID} Aurthor Name: {author.Author.FirstName} {author.Author.LastName}");
                     }
                 }
             }

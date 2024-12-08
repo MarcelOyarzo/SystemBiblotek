@@ -56,12 +56,12 @@ class MainProgram
             case 1:
                 Add.Run();
                 break;
-            // case 2:
-            //     null.Run();
-            //     break;
-            // case 3:
-            //     null.Run();
-            //     break;
+            case 2:
+                ReturnAndLoan.Run();
+                break;
+            case 3:
+                Update.Run();
+                break;
             case 4:
                 Relationship.Run();
                 break;

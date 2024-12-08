@@ -15,7 +15,7 @@ public class Relationship
             {
             foreach (var book in books)
             {
-                System.Console.WriteLine($"Book ID {book.BookID} Title {book.Title} ");
+                System.Console.WriteLine($"Book ID: {book.BookID} Title: {book.Title} ");
             }
             }
             else 
@@ -29,7 +29,7 @@ public class Relationship
             {
             foreach (var Author in Authors)
             {
-                System.Console.WriteLine($"Author ID {Author.AuthorID} Name {Author.FirstName} {Author.LastName} ");
+                System.Console.WriteLine($"Author ID: {Author.AuthorID} Name: {Author.FirstName} {Author.LastName} ");
             }
             }
             else 

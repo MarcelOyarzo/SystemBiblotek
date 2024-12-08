@@ -38,7 +38,7 @@ public class Add
             System.Console.WriteLine("Enter Title");
             var _title = Console.ReadLine()?.Trim();
 
-            System.Console.WriteLine("Enter Release Date YYYY MM DD");
+            System.Console.WriteLine("Enter Release Date YYYY MM DD (With space between)");
             var _issueDate = Console.ReadLine();
             if (!DateOnly.TryParse(_issueDate, out DateOnly issueDate))
             {

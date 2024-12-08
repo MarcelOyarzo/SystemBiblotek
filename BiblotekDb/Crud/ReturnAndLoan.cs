@@ -53,9 +53,9 @@ public class ReturnAndLoan
                 return;
             }
 
-            foreach (var bocks in books)
+            foreach (var bks in books)
             {
-                Console.WriteLine($"Book ID : {bocks.BookID}, Title : {bocks.Title} Available : {(bocks.ReadyLoan ? "Yes" : "No")}\n");
+                Console.WriteLine($"Book ID: {bks.BookID}, Title: {bks.Title} Available: {(bks.QuickBorrow ? "Yes" : "No")}\n");
             }
 
 
@@ -76,7 +76,7 @@ public class ReturnAndLoan
                 return;
             }
 
-            if (!book.ReadyLoan)
+            if (!book.QuickBorrow)
             {
                 System.Console.WriteLine("The book is currently unavailable ");
                 return;
@@ -92,7 +92,7 @@ public class ReturnAndLoan
             context.Loans.Add(loan);
             context.SaveChanges();
 
-            Console.WriteLine($"Loan added {bookID} loaner {loaner} ");
+            Console.WriteLine($"Loan added: {bookID} loaner: {loaner} ");
         }
     }
 
@@ -120,18 +120,18 @@ public class ReturnAndLoan
                 return;
             }
 
-            loan.LoanName = true;
+            loan.ComeBack = true;
             loan.ReturnDate = DateTime.Now;
 
 
             var book = context.Books.Find(bookID);
             if (book != null)
             {
-                book.ReadyLoan = true;
+                book.QuickBorrow = true;
             }
 
             context.SaveChanges();
-            Console.WriteLine($"Loaner {loaner} has returned Book ID {bookID} ");
+            Console.WriteLine($"Loaner: {loaner} has returned Book ID: {bookID} ");
         }
     }
 }
